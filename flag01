@@ -1,0 +1,20 @@
+level0@RainFall:~$ ./level0  423
+$ whoami
+level1
+$ ls
+ls: cannot open directory .: Permission denied
+$ cd -
+/bin/sh: 3: cd: can't cd to /home/user/level0
+$ cd ..
+$ pwd
+/home/user
+$ cd level1
+$ pwd
+/home/user/level1
+$ ls
+level1
+$ cat lev
+cat: lev: No such file or directory
+$ cat .pass
+1fe8a524fa4bec01ca4ea2a869af2a02260d4a7d5fe7e7c24d8617e6dca12d3a
+$ su level1
