@@ -1,4 +1,4 @@
-0x08048ec0 <+0>:	push   ebp
+   0x08048ec0 <+0>:	push   ebp
    0x08048ec1 <+1>:	mov    ebp,esp
    0x08048ec3 <+3>:	and    esp,0xfffffff0
    0x08048ec6 <+6>:	sub    esp,0x20
@@ -44,7 +44,6 @@
    0x08048f70 <+176>:	mov    DWORD PTR [esp+0x4],0x1
    0x08048f78 <+184>:	mov    DWORD PTR [esp],eax
    0x08048f7b <+187>:	call   0x804a230 <fwrite>
----Type <return> to continue, or q <return> to quit---
    0x08048f80 <+192>:	mov    eax,0x0
    0x08048f85 <+197>:	leave  
-   0x08048f86 <+198>:	ret    
+   0x08048f86 <+198>:	ret 
