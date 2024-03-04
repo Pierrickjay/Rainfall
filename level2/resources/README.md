@@ -1,8 +1,8 @@
-## Flag0 README: Finding Flag0
+## Flag2 README: Finding Flag2
 
 After connection on our vm with:
 ```bash
-ssh level0@localhost -p 4242
+ssh level2@localhost -p 4242
 ```
 We finded a binary program called level1.
 if we decompile it we got this
