@@ -4,7 +4,7 @@ After connection on our vm with:
 ```bash
 ssh level3@localhost -p 4242
 ```
-We finded a binary program called level1.
+We finded a binary program called level3.
 if we decompile it we got this
 ```C
 int v()
