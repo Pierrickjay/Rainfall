@@ -69,6 +69,3 @@ $
 ```
 
 And VOILA, our shell is runing with level9, as always we just need to **cat** the file **.pass** of level9.
-
-
-·æ°`·åëà
