@@ -1,0 +1,26 @@
+#include <defs.h>
+
+int main(int argc, const char **argv, const char **envp)
+{
+	class_N *v3;
+	class_N *v4;
+	class_N *v6;
+
+	if ( argc <= 1 )
+	_exit(1);
+	v3 = (N *)operator new(108);
+	class_N::class_N(v3, 5);
+	v6 = v3;
+	v4 = (N *)operator new(108);
+	class_N::class_N(v4, 6);
+	class_N::setAnnotation(v6, (char *)argv[1]);
+	return (**(int (__cdecl ***)(class_N *, class_N *))v4)(v4, v6);
+}
+
+void *class_N::setAnnotation(class_N *this, char *s)
+{
+	size_t v2;
+
+	v2 = strlen(s);
+	return memcpy((char *)this + 4, s, v2);
+}
