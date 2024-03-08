@@ -1,6 +1,6 @@
 #include <defs.h>
 
-int __cdecl main(int argc, const char **argv, const char **envp)
+int main(int argc, const char **argv, const char **envp)
 {
     char buffer[5];
     char v5[2];
