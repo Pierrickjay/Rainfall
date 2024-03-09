@@ -5,7 +5,7 @@ We are now into `/home/user/level1`.
 After listing all file, we can see there is `level1` into our directory.
 We run it and it opens our standard input. We decided to try something like **coucou les amis**. Nothing..
 
-We decided to take our all habits and dowload the file with: 
+We decided to take our old habits and dowload the file with: 
 
 ```bash
 scp -P 4343 level1@localhost:/home/user/level1/level1 ~
