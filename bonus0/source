@@ -10,11 +10,12 @@ char	*p(char *dest, char *s)
 
 char	*pp(char *dest)
 {
+	//dest[42]
 	char src[20];
 	char v3[28];
 
-	p(src, " - ");
-	p(v3, " - ");
+	p(src, " - "); // src = A
+	p(v3, " - "); // aA00aA01aA02aA03aA04
 	strcpy(dest, src);
 	dest[strlen(dest)] = 0x080486A4;
 	return strcat(dest, v3);
