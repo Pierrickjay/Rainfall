@@ -1,25 +1,24 @@
 #include <defs.h>
 
-int __cdecl greetuser(char src)
+int	greetuser(char src)
 {
-  __int128 dest;
-  __int16 v3;
-  char v4;
+	char	*dest;
+	char	*v3;
 
-  switch ( language )
-  {
-    case 1:
-      strcpy((char *)&dest, "Hyvää päivää ");
-      break;
-    case 2:
-      strcpy((char *)&dest, "Goedemiddag! ");
-      break;
-    case 0:
-      strcpy((char *)&dest, "Hello ");
-      break;
-  }
-  strcat((char *)&dest, &src);
-  return puts((const char *)&dest);
+	switch ( language )
+	{
+		case 1:
+		strcpy((char *)&dest, "Hyvää päivää ");
+		break;
+		case 2:
+		strcpy((char *)&dest, "Goedemiddag! ");
+		break;
+		case 0:
+		strcpy((char *)&dest, "Hello ");
+		break;
+	}
+	strcat((char *)&dest, &src);
+	return puts((const char *)&dest);
 }
 
 int	main(int argc, const char **argv, const char **envp)

@@ -1,6 +1,5 @@
 ## Flag Bonus1 README: Finding Flag Bonus1
 
-
 After connection on our vm with:
 ```bash
 ssh bonus1@localhost -p 4343
