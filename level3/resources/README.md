@@ -9,8 +9,8 @@ if we decompile it we got this
 ```C
 int v()
 {
-  int result; // eax
-  char s[520]; // [esp+10h] [ebp-208h] BYREF
+  int result;
+  char s[520];
 
   fgets(s, 512, stdin);
   printf(s);
