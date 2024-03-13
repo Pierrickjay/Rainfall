@@ -7,7 +7,7 @@ int	main(int argc, const char **argv, const char **envp)
 	memset(ptr, 0, sizeof(ptr));
 	if ( !infile || argc != 2 )
 		return -1;
-	fread(ptr, 1u, 66, infile);
+	fread(ptr, 1, 66, infile);
 	ptr[65] = 0;
 	ptr[atoi(argv[1])] = 0;
 	fread(&ptr[66], 1, 65, infile);
