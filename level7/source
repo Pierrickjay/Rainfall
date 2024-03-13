@@ -1,0 +1,29 @@
+char *c;
+
+int m()
+{
+	time_t v0;
+
+	v0 = time(0);
+	return printf("%s - %d\n", c, v0);
+}
+
+int main(int argc, const char **argv, const char **envp)
+{
+	int *v3;
+	void *v5;
+	void *v6;
+
+	v6 = malloc(8);
+	v6 = 1;
+	(v6 + 1) = malloc(8);
+	v5 = malloc(8);
+	v5 = 2;
+	(v5 + 1) = malloc(8);
+	strcpy((v6 + 1), argv[1]);
+	strcpy((v5 + 1), argv[2]);
+	v3 = fopen("/home/user/level8/.pass", "r");
+	fgets(c, 68, v3);
+	puts("~~");
+	return 0;
+}

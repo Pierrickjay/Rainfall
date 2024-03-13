@@ -26,11 +26,11 @@ Retrieve the flag and progress to the next level.
 - [Level7](level7/resources/README.md)
 - [Level8](level8/resources/README.md)
 - [Level9](level9/resources/README.md)
-- [Level10](level10/resources/README.md)
-- [Level11](level11/resources/README.md)
-- [Level12](level12/resources/README.md)
-- [Level13](level13/resources/README.md)
-- [level14](level14/resources/README.md)
+- [bonus0](bonus0/resources/README.md)
+- [bonus1](bonus1/resources/README.md)
+- [bonus2](bonus2/resources/README.md)
+- [bonus3](bonus3/resources/README.md)
+- [end](end/resources/README.md)
 
 ## Author
 - [Pierrick Jay](https://github.com/Pierrickjay)
