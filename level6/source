@@ -15,7 +15,7 @@ void main(int param_1,int param_2)
 	char	*dest;
 	void	*ppcVar1;
 
-	dest = (char *)malloc(0x40);
+	dest = (char *)malloc(64);
 	ppcVar1 = malloc(4);
 	ppcVar1 = m;
 	strcpy(dest,*(char **)(param_2 + 4));

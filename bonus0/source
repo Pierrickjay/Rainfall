@@ -14,8 +14,8 @@ char	*pp(char *dest)
 	char src[20];
 	char v3[28];
 
-	p(src, " - "); // src = A
-	p(v3, " - "); // aA00aA01aA02aA03aA04
+	p(src, " - ");
+	p(v3, " - ");
 	strcpy(dest, src);
 	dest[strlen(dest)] = 0x080486A4;
 	return strcat(dest, v3);

@@ -24,3 +24,11 @@ void *class_N::setAnnotation(class_N *this, char *s)
 	v2 = strlen(s);
 	return memcpy((char *)this + 4, s, v2);
 }
+
+void N::N(N *this,int param_1)
+
+{
+  *(undefined ***)this = 0x08048848;
+  *(int *)(this + 104) = param_1;
+  return;
+}
